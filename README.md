@@ -53,25 +53,34 @@ A role-based student management platform built with Django. It features a custom
 
 Follow these steps to set up and run the project on your local machine.
 ✅ Prerequisites (Install First)
-
+```bash
     Python 3.x
+```
+```bash
 
     Django 3.x or newer
-
+```
+```bash
     A SQL database (e.g., SQLite, PostgreSQL, or MySQL)
-
+```
+```bash
     Git
-
+```
 🧾 Run Locally
 
     Clone the repository:
-
+```bash
 git clone https://github.com/YourUsername/Student-Management-System.git
+```
+```bash
 cd Student-Management-System
+```
 
 Create and activate a virtual environment:
-
+```bash
 python -m venv venv
+```
+
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 
 Install the required packages:
