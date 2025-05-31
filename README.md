@@ -77,42 +77,68 @@ cd Student-Management-System
 ```
 
 Create and activate a virtual environment:
+
 ```bash
 python -m venv venv
 ```
-
+```bash
 source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
 
 Install the required packages:
-
+```bash
 pip install -r requirements.txt
+```
 
 Apply the database migrations:
-
+```bash
 python manage.py migrate
-
+```
 Create a superuser (admin account):
-
+```bash
 python manage.py createsuperuser
-
+```
 Run the development server:
-
+```bash
     python manage.py runserver
-
+```
 🌐 Access the Application
 
 Open your browser and navigate to:
-
+```bash
 http://127.0.0.1:8000/
+```
+📬 Key Routes
+🔐 Authentication (authenticationapp)
 
-📬 Key Routes (if using views)
+    POST /signup/ — Register a new user (student, teacher, or admin)
 
-    Login: /login/
+    POST /login/ — Login using email and password
 
-    Password Reset: /reset-password/
+    POST /forgot-password/ — Request password reset token via email
 
-    Student Dashboard: /student/dashboard/
+    POST /reset-password/<token>/ — Reset password using token
 
-    Teacher Dashboard: /teacher/dashboard/
+    GET /logout/ — Logout user
 
-    Admin Dashboard: /admin/dashboard/
+🏫 School Dashboard & Notifications (schoolapp)
+
+    GET /dashboard/ — User dashboard (role-based: student/teacher/admin)
+
+    POST /notification/mark-as-read/ — Mark all notifications as read
+
+    POST /notification/clear-all/ — Clear all notifications
+
+🎓 Student Management (studentapp)
+
+    GET / — List all students
+
+    GET /add/ — Add a new student
+
+    GET /students/<slug>/ — View a student profile
+
+    GET /edit/<slug>/ — Edit student information
+
+    GET /delete/<slug>/ — Delete a student
+
+
