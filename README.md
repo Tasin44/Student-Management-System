@@ -48,3 +48,62 @@ A role-based student management platform built with Django. It features a custom
 3. Run migrations:
    ```bash
    python manage.py migrate
+
+## 🚀 Setup Instructions to Run
+
+Follow these steps to set up and run the project on your local machine.
+✅ Prerequisites (Install First)
+
+    Python 3.x
+
+    Django 3.x or newer
+
+    A SQL database (e.g., SQLite, PostgreSQL, or MySQL)
+
+    Git
+
+🧾 Run Locally
+
+    Clone the repository:
+
+git clone https://github.com/YourUsername/Student-Management-System.git
+cd Student-Management-System
+
+Create and activate a virtual environment:
+
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+
+Install the required packages:
+
+pip install -r requirements.txt
+
+Apply the database migrations:
+
+python manage.py migrate
+
+Create a superuser (admin account):
+
+python manage.py createsuperuser
+
+Run the development server:
+
+    python manage.py runserver
+
+🌐 Access the Application
+
+Open your browser and navigate to:
+
+http://127.0.0.1:8000/
+
+📬 Key Routes (if using views)
+
+    Login: /login/
+
+    Password Reset: /reset-password/
+
+    Student Dashboard: /student/dashboard/
+
+    Teacher Dashboard: /teacher/dashboard/
+
+    Admin Dashboard: /admin/dashboard/
