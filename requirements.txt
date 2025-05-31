@@ -1,0 +1,7 @@
+Django>=3.2,<4.0
+djangorestframework>=3.12.4
+psycopg2-binary>=2.9.1  # Required only if using PostgreSQL
+python-dotenv>=0.21.0   # For managing environment variables (optional but recommended)
+Pillow>=8.2.0           # For image uploads (e.g., profile pictures)
+django-cors-headers>=3.7.0  # If using a separate frontend (e.g., React)
+
